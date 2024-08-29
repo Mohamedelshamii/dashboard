@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashbord</title>
+  </head>
+  <body>
+    <!-- menu -->
+    <div class="menu">
+      <ul>
+        <li class="profile">
+          <div class="img-box">
+            <img src="./photo/-2xg5fr.jpg" alt="profile" />
+          </div>
+          <h2 class="title">MohaMed</h2>
+        </li>
+        <!-- dashbord -->
+        <li>
+          <a class="active" href="#">
+            <i class="fas fa-home" title="dashbord"></i>
+            <h5>Dashbord</h5>
+          </a>
+        </li>
+        <!-- client -->
+        <li>
+          <a href="#">
+            <i class="fas fa-user-group" title="client"></i>
+            <h5>Clients</h5>
+          </a>
+        </li>
+        <!-- products -->
+        <li>
+          <a href="#">
+            <i class="fas fa-table" title="products"></i>
+            <h5>Products</h5>
+          </a>
+        </li>
+        <!-- charts -->
+        <li>
+          <a href="#">
+            <i class="fas fa-chart-pie" title="charts"></i>
+            <h5>Charts</h5>
+          </a>
+        </li>
+        <!-- posts -->
+        <li>
+          <a href="#">
+            <i class="fas fa-pen" title="posts"></i>
+            <h5>Posts</h5>
+          </a>
+        </li>
+        <!-- favorite -->
+        <li>
+          <a href="#">
+            <i class="fas fa-star" title="favorite"></i>
+            <h5>Favorite</h5>
+          </a>
+        </li>
+        <!-- settings -->
+        <li>
+          <a href="#">
+            <i class="fas fa-cog" title="settings"></i>
+            <h5>Settings</h5>
+          </a>
+        </li>
+        <!-- log out -->
+        <li class="log-out" title="log-out">
+          <a href="#">
+            <i class="fas fa-sign-out"></i>
+            <h5>Log Out</h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- the big page -->
+    <div class="content">
+      <!-- side bar -->
+      <div class="title-info">
+        <p>dashbord</p>
+        <i class="fas fa-chart-bar"></i>
+      </div>
+      <div class="data-info">
+        <div class="box">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <div class="data">
+            <p>user</p>
+            <span data-target="1500">0</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-pen" aria-hidden="true"></i>
+          <div class="data">
+            <p>posts</p>
+            <span data-target="12345">0</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-table" aria-hidden="true"></i>
+          <div class="data">
+            <p>product</p>
+            <span data-target="8000">0</span>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fa fa-dollar" aria-hidden="true"></i>
+          <div class="data">
+            <p>revenue</p>
+            <span data-target="1200000">0</span>
+          </div>
+        </div>
+      </div>
+      <!-- product -->
+      <div class="title-info">
+        <p>product</p>
+        <i class="fas fa-table"></i>
+      </div>
+      <!-- table product -->
+      <table>
+        <thead>
+          <tr>
+            <th>product</th>
+            <th>price</th>
+            <th>count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="product">Laptop</span></td>
+            <td><span class="price">$ 900</span></td>
+            <td><span class="count">50</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Smartphone</span></td>
+            <td><span class="price">$ 600</span></td>
+            <td><span class="count">120</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Headphones</span></td>
+            <td><span class="price">$ 80</span></td>
+            <td><span class="count">300</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Smartwatch</span></td>
+            <td><span class="price">$ 150</span></td>
+            <td><span class="count">200</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Tablet</span></td>
+            <td><span class="price">$ 250</span></td>
+            <td><span class="count">100</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Camera</span></td>
+            <td><span class="price">$ 500</span></td>
+            <td><span class="count">80</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Printer</span></td>
+            <td><span class="price">$ 200</span></td>
+            <td><span class="count">60</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Monitor</span></td>
+            <td><span class="price">$ 300</span></td>
+            <td><span class="count">150</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Keyboard</span></td>
+            <td><span class="price">$ 40</span></td>
+            <td><span class="count">500</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Mouse</span></td>
+            <td><span class="price">$ 30</span></td>
+            <td><span class="count">450</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Speaker</span></td>
+            <td><span class="price">$ 120</span></td>
+            <td><span class="count">200</span></td>
+          </tr>
+          <tr>
+            <td><span class="product">Router</span></td>
+            <td><span class="price">$ 70</span></td>
+            <td><span class="count">250</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

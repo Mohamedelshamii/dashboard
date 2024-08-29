@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* style */
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #001;
+  display: flex;
+  text-transform: capitalize;
+}
+.img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  flex-shrink: 0;
+}
+.img-box img {
+  width: 100%;
+  /* object-fit: scale-down; */
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.menu {
+  background-color: #123;
+  width: 60px;
+  height: 95vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  cursor: pointer;
+  /* position */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.menu:hover {
+  width: 260px;
+}
+ul {
+  position: relative;
+  height: 100%;
+}
+ul li a {
+  display: block;
+  /* background-color: red; */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.5s;
+}
+ul li a:hover,
+.active,
+.data-info .box:hover,
+td:hover {
+  background-color: #ffffff55;
+}
+.log-out {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-wrap: nowrap;
+}
+.log-out a {
+  background-color: #a00;
+}
+ul li a i {
+  font-size: 1.9rem;
+}
+.content {
+  width: 100%;
+  margin: 10px;
+  cursor: pointer;
+}
+.title-info {
+  background-color: #0080ff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+.data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.data-info .box {
+  background-color: #123;
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.data-info .box i {
+  font-size: 40px;
+}
+.data-info .box .data {
+  text-align: center;
+}
+.data-info .box .data span {
+  font-size: 30px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+td,
+th {
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+th {
+  background-color: #0080ff;
+}
+.price,
+.count {
+  padding: 6px;
+  border-radius: 6px;
+}
+.price {
+  background-color: red;
+}
+.count {
+  background-color: green;
+}
+
+/* media */
+@media (max-width: 420px) {
+  body {
+    font-size: 12px;
+  }
+  .menu {
+    width: 80px;
+    height: 99vh;
+    padding: 7px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    cursor: pointer;
+    /* position */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .menu:hover {
+    width: 80px;
+  }
+  .log-out {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  ul li a i {
+    font-size: 1.5rem;
+  }
+}
